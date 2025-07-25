@@ -8,8 +8,8 @@ body {
 
 h1 {
   font-size: 50px;
-  font-family: "Microsoft Sans Serif", sans-serif;
-  color: #000080;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  color: #000033;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,16 +17,32 @@ h1 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Sarabun", sans-serif;
   text-align: justify;
+  color: #000000;
 }
 
 strong {
   font-weight: bold;
-  color: #483D8B;
+  color: #000066;
   font-family: "Sarabun", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.gallery {
+  gap: 80px;
+  justify-content: center;
+  display: flex;
+  margin: 20px 0;
+  
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -34,10 +50,35 @@ table {
   margin: 20px auto;
   border-collapse: collapse;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px;
 }
 
 thead {
-  background-color: #d4dae2;
+  background-color: #D3D3D3;
+  font-weight: bold;
+  color: #000000;
   
 }
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+  word-wrap: break-word;
+}
+
+.mon {background-color: #FFFF33;}
+.tue {background-color: #FF33CC;}
+.wed {background-color: #7FFF00;}
+.thu {background-color: #FF9900;}
+.fri {background-color: #3366FF;}
+.sat {background-color: #CC00FF;}
+.sun {background-color: #CC0000;}
+.intro {background-color: #FFFF66;}
+.eng {background-color: #FFFF66;}
+.stort {background-color: #FFCCCC;}
+.compro {background-color: #FFCCCC;}
+.design {background-color: #FFCCCC;}
+.happy {background-color: #8bc2f8;}
