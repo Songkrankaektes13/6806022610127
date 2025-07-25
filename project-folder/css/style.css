@@ -1,0 +1,43 @@
+body {
+  margin: 10px 40px;
+  background-color: #FFFF;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Microsoft Sans Serif", sans-serif;
+  color: #000080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Sarabun", sans-serif;
+  text-align: justify;
+}
+
+strong {
+  font-weight: bold;
+  color: #483D8B;
+  font-family: "Sarabun", sans-serif;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #d4dae2;
+  
+}
