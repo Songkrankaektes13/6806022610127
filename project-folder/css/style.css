@@ -82,3 +82,12 @@ td {
 .compro {background-color: #FFCCCC;}
 .design {background-color: #FFCCCC;}
 .happy {background-color: #8bc2f8;}
+
+div {
+  border: 8px solid #3366FF;
+  padding: 20px 80px;
+  background: #72abd1;
+  width: 100px;
+  border-radius: 45px;
+}
+
