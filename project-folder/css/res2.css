@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Style the body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*Header/logo Title*/
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9a;
+    color: rgb(145, 221, 226);
+}
+
+/*Style the top navigation bar*/
+.navbar {
+    display: flex;
+    background-color: black;
+}
+
+/*Style the top navigation bar links*/
+.navbar a {
+    color: aliceblue;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Change color on hover*/
+.navbar a:hover{
+    background-color: azure;
+    color: black;
+}
+
+/*Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: azure;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px){
+    .row, .navbar{
+        flex-direction: column;
+    }
+}
