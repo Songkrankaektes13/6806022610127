@@ -1,47 +1,26 @@
-<<<<<<< HEAD
 .grid-container {
-    display: grid; /* display property is set to grid or inline-grid. */
+    display: grid;
     grid-template-areas: 'myArea myArea myArea myArea myArea';
     /*column-gap: 50px;
     row-gap: 50px;*/
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
-    }
+}
+
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    }
+}
+
 .item8 {
     grid-area: 2/1/span 2/span 3;
 }
+
 .item1 {
-grid-area: myArea;
+    grid-area: myArea;
 }
-=======
-.grid-container {
-    display: grid; /* display property is set to grid or inline-grid. */
-    grid-template-areas: 'myArea myArea myArea myArea myArea';
-    /*column-gap: 50px;
-    row-gap: 50px;*/
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-    }
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    }
-.item8 {
-    grid-area: 2/1/span 2/span 3;
-}
-.item1 {
-grid-area: myArea;
-}
->>>>>>> 8c4395bd621100ac70fba2d795bb51b5a9602f8e
+

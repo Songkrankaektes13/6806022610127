@@ -1,12 +1,12 @@
-<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Style the side navigation */
+
 .sidenav {
     height: 100%;
     width: 200px;
@@ -14,59 +14,23 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(255, 213, 75);
+    background-color: #d9fc65;
     overflow-x: hidden;
 }
-/* Side navigation links */
+
 .sidenav a {
     color: rgb(0, 0, 0);
     padding: 16px;
     text-decoration: none;
     display: block;
 }
-/* Change color on hover */
+
 .sidenav a:hover {
-    background-color: rgb(248, 248, 247);
+    background-color: #324374;
     color: black;
 }
-/* Style the content */
+
 .content {
     margin-left: 200px;
     padding-left: 20px;
-=======
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/* Style the side navigation */
-.sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(255, 213, 75);
-    overflow-x: hidden;
-}
-/* Side navigation links */
-.sidenav a {
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-}
-/* Change color on hover */
-.sidenav a:hover {
-    background-color: rgb(248, 248, 247);
-    color: black;
-}
-/* Style the content */
-.content {
-    margin-left: 200px;
-    padding-left: 20px;
->>>>>>> 8c4395bd621100ac70fba2d795bb51b5a9602f8e
 }
