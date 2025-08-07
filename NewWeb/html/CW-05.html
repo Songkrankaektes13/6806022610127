@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application form</title>
+</head>
+<body>
+    <h1>ฟอร์มสมัครเรียนระดับปริญญาตรี</h1>
+    <form>
+    <h2>ข้อมูลส่วนตัว</h2> 
+        คำนำหน้าชื่อ : <select>
+                        <option value="">กรุณาระบุ</option>
+                        <option value="mr">นาย</option>
+                        <option value="mrs">นาง</option>
+                        <option value="miss">นางสาว</option>
+                    </select>
+        ชื่อ : <input type="text">
+        นามสกุล : <input type="text"><br><br>
+        เลขประจำตัวประชาชน (13 หลัก) : <input type="text" maxlength="13">
+        วัน/เดือน/ปีเกิด : <input type="date"><br><br>
+        อายุ (ปี) : <input type="number">
+        เพศ : <input type="radio" name="">กรุณาระบุ
+              <input type="radio" name="Male">ชาย
+              <input type="radio" name="Female">หญิง
+              <input type="radio" name="Not">ไม่ระบุ<br><br>
+        สัญชาติ : <input type="text">
+        ศาสนา : <input type="text"><br><br>
+        เบอร์โทรศัพท์ : <input type="tel">
+        อีเมล : <input type="email"><br><br>
+        ที่อยู่ : <textarea id="address" name="address" rows="2" cols="50" placeholder="ระบุบ้านเลขที่ หมู่ ซอย ถนน ตำบล อำเภอ จังหวัด รหัสไปรษณีย์"></textarea>
+    
+    <h2>ข้อมูลสมัครเรียน</h2>
+        วุฒิการศึกษา : <select>
+                        <option value="">กรุณาระบุ</option>
+                        <option value="ม.6">ม.6</option>
+                        <option value="ปวช.">ปวช.</option>
+                        <option value="ปวส.">ปวส.</option>
+                    </select>
+                    <br><br>
+        ชื่อสถานศึกษาที่จบ : <input type="text"><br><br>
+        ปีการศึกษาที่สำเร็จ : <input type="number"><br><br>
+        GPA : <input type="number" step="0.01"><br><br>
+        สาขาที่สมัคร : <select>
+                        <option value="">กรุณาระบุ</option>
+                        <option value="IT">IT</option>
+                        <option value="ITI">ITI</option>
+                        <option value="INE">INE</option>
+                        <option value="INET">INET</option>
+                    </select>
+        เหตุผลที่เลือกสาขา : <textarea name="massage" rows="2" cols="50">กรุณากรอกข้อความ</textarea>
+    
+    <h2>ประวัติการศึกษา</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ระดับการศึกษา</th>
+                    <th>สถานศึกษา</th>
+                    <th>จังหวัด</th>
+                    <th>ปีที่เข้า</th>
+                    <th>ปี่ที่จบ</th>
+                    <th>วุฒิที่ได้รับ</th>
+                    <th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ประถมศึกษา</td>
+                        <td><input type="text" name="primary_school" required></td>
+                        <td><input type="text" name="primary_province" required></td>
+                        <td><input type="text" name="primary_start" required></td>
+                        <td><input type="text" namr="primary_end" required></td>
+                        <td><input type="text" name="primary_degree" required></td>
+                        <td><input type="text" name="primary_gpa" required></td>
+                </tr>
+                <tr>
+                    <td>มัธยมต้น</td>
+                        <td><input type="text" name="junior_school" required></td>
+                        <td><input type="text" name="junior_province" required></td>
+                        <td><input type="text" name="junior_start" required></td>
+                        <td><input type="text" namr="junior_end" required></td>
+                        <td><input type="text" name="junior_degree" required></td>
+                        <td><input type="text" name="junior_gpa" required></td>
+                </tr>
+                <tr>
+                    <td>มัธยมปลาย/ปวช./ปวส.</td>
+                        <td><input type="text" name="senior_school" required></td>
+                        <td><input type="text" name="senior_province" required></td>
+                        <td><input type="text" name="senior_start" required></td>
+                        <td><input type="text" namr="senior_end" required></td>
+                        <td><input type="text" name="senior_degree" required></td>
+                        <td><input type="text" name="senior_gpa" required></td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h2>เอกสารแนบ</h2>
+        แนบไฟล์สำเนาบัตรประชาชน : <input type="file"><br><br>
+        แนบไฟล์วุฒิการศึกษา (เช่น ปพ.1) : <input type="file">
+
+    <h2>ยืนยันการส่งแบบฟอร์ม</h2>
+        <p>
+            <label>
+                </p><input type="checkbox" name="agree" required>
+                ยอมรับเงื่อนไขการสมัครเรียนทั้งหมด
+            </label>
+        <p>
+        <input type="submit" value="ยืนยัน">
+        <input type="reset">
+    </form>
+</body>
+</html>
