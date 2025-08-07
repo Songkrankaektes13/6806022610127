@@ -8,7 +8,7 @@ body {
 
 .header {
     grid-area: header;
-    background-color: #f1f1f1;
+    background-color: pink;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -16,15 +16,17 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 
-    'header header header header header header'
-    'left left middle middle right right'
-    'footer footer footer footer footer footer';
+    grid-template-areas:
+        'header header header header header header'
+        'left middle middle middle middle right'
+        'footer footer footer footer footer footer';
 }
 
-.left, .middle, .right {
+.left,
+.middle,
+.right {
     padding: 10px;
-    height: 300px;
+    height: 300px; 
 }
 
 .left {
@@ -41,7 +43,7 @@ body {
 
 .footer {
     grid-area: footer;
-    background-color: #f1f1f1;
+    background-color: orange;
     padding: 10px;
     text-align: center;
 }
