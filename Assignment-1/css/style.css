@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  height: 90vh;
+  background: white;
+}
+
+.sidebar {
+  width: 80px;
+  height: 100%;
+  background-color: black;
+  padding: 40px;
+  box-sizing: border-box;
+  color: white;
+  overflow: hidden;
+  border-radius: 0 20px 20px 0;
+  border-right: none;
+  transition: .75s ease;
+  position: relative;
+  z-index: 10;
+  position: fixed;
+}
+
+.sidebar:hover {
+  width: 230px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+li {
+  padding: 13px 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #8da6f7;
+}
+
+.nav-link {
+  display: inline-flex;
+  column-gap: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.item-left {
+  padding-left: .10rem;
+}
+
+.attribute {
+  position: absolute;
+  bottom: 10px;
+}
+
+.item-icon {
+  font-size: 20px;
+}
+
+.item-text {
+  font-size: 12px;
+}
+
+.dashboard {
+  padding: 20px;
+  width: calc(100% - 80px);
+  max-width: 2000px;
+  margin-left: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-right img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  background: #cedef3;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.welcome-text {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.welcome-text h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: px;
+}
+
+.welcome-text p {
+  font-size: 14px;
+  color: #666;
+}
+
+.welcome img {
+  max-width: 200px;
+  margin-right: 50px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat {
+  padding: 30px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.yellow { background: black; }
+.purple { background: black; }
+.pink { background: black; }
+.blue { background: black;}
+
+.tasks h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.task {
+  background: #f8f9ff;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.task img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-info h5 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.task-info p {
+  font-size: 13px;
+  color: #666;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 13%;
+  max-height: 10%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 13px;
+}
+
+.search-box button {
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  font-size: 13.5px;
+}
+
+.search-box button:hover {
+  background-color: #8da6f7;
+}
+
+ .manus {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;             
+}
+
+form {
+  padding: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #040404;
+  outline: none;
+  box-shadow: 0 0 4px rgba(74,144,226,0.3);
+}
+
+.boxs {
+  display: flex;            
+  gap: 20px;                
+  justify-content: center;  
+}
+
+.black-box {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.taskk {
+  background: #f8f9ff;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+}

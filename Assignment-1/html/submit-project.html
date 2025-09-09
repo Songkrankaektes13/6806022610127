@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title> Student Submit Project</title>
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../html/deshboard.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-home'></i>
+                        </span>
+                        <span class="item-text">หน้าหลัก</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-user'></i>
+                        </span>
+                        <span class="item-text">ข้อมูลส่วนตัว</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/submit-project.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-send'></i>
+                        </span>
+                        <span class="item-text">ยื่นโครงงาน</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/submit-project.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-line-chart'></i>
+                        </span>
+                        <span class="item-text">ความก้าวหน้าโครงงาน</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="../html/gallery.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-help-circle'></i>
+                        </span>
+                        <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="dashboard">
+        <div class="header">
+            <img src="../images/images1.png" class="logo" alt="logo">
+            <div class="header-right">
+                <span>Guest</span>
+                <div class="profile-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 
+                                2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 
+                                1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                     </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="boxs">
+            <div class="black-box">ยื่นโครงงาน</div>
+            <div class="black-box">ยื่น/แก้ไขรายละเอียดโปรเจค</div>
+            <div class="black-box">ยื่นสอบจบ </div>
+        </div>
+
+
+        <div class="tasks">
+            <h4>กรอกข้อมูลโครงงาน</h4>
+            <div class="taskk">
+                    <form>
+                        <label>ชื่อโครงงาน</label>
+                        <input type="text" name="project_th"><br>
+
+                        <label>อาจารย์ที่ปรึกษา</label>
+                        <input type="text" name="advisor"><br>
+
+                        <label>ผู้ทำโครงงาน</label>
+                        <select id="memberCount" onchange="toggleMembers()">
+                            <option value="กรุณาระบุ">กรุณาระบุ</option>
+                            <option value="1">1 คน</option>
+                            <option value="2">2 คน</option>
+                        </select>
+                        
+                        <div id="member1">
+                            <label>1. ชื่อ-นามสกุล</label>
+                            <input type="text" name="member1_name">
+                            <label>รหัสนักศึกษา</label>
+                            <input type="text" name="member1_id"> 
+                        </div>
+
+                        <div id="member2" style="display: none;">
+                            <label>2. ชื่อ-นามสกุล</label>
+                            <input type="text" name="member2_name">
+                            <label>รหัสนักศึกษา</label>
+                            <input type="text" name="member2_id">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function toggleMembers() {
+        const count = document.getElementById("memberCount").value;
+        const member2 = document.getElementById("member2");
+        if (count === "2") {
+            member2.style.display = "block";
+        } else {
+            member2.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>

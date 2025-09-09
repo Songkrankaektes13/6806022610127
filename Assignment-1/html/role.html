@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>Role</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="role-box">
+            <h1>Choose your role</h1>
+            <p>Simplify your workflow and boost your productivity with <b>Tuga’s App</b>. Get started for free.</p>
+            <div class="roles">
+                <a href="../html/deshboard.html"><button class="role">Student</button></a>
+                <a href="#"><button class="role">Teacher</button></a>
+                <a href="#"><button class="role">Committee</button></a>
+            </div>
+            <div class="back">
+                <a href="../html/index.html" class="btn">Back to Login</a>
+            </div>
+        </div>
+    
+        <div class="slider-box">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../images/images3.png" alt="slide1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../images/images4.png" alt="slide2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../images/images5.png" alt="slide3">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+                autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+</html>

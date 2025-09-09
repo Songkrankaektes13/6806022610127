@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  border-radius: 20px;
+}
+
+.login-box {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+.role .btn {
+  display: inline-block;
+  width: 300px;
+  padding: 12px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 2px;
+  background: black;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;  
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role .btn:hover {
+    background-color: #8da6f7;
+}
+
+.login-box .alt {
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.social button:hover {
+    background-color: #8da6f7;
+}
+
+.login-box .register {
+  font-size: 0.9rem;
+}
+
+.login-box .register a{
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.slider-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 5px;
+}
+
+.swiper {
+  width: 200%;
+  max-width: 600px;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  display: block;
+}
+
+.role-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.role-box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.role-box p {
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.roles .role {
+  width: 200px;
+  padding: 12px;
+  border-radius: 30px;
+  border: 2px solid black;
+  background: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.roles .role:hover {
+  background-color: black;
+  color: white;
+}
+
+.role-box {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.back .btn {
+  display: inline-block;
+  width: 200px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 30px;
+  background: black;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.back .btn:hover {
+  background: #8da6f7;
+}
+
+
