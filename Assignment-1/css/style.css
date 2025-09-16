@@ -5,10 +5,10 @@
 }
 
 body {
-  font-family: sans-serif;
   display: flex;
   height: 90vh;
   background: white;
+  font-family: 'Tahoma', 'Cordia New', sans-serif;
 }
 
 .sidebar {
@@ -72,7 +72,7 @@ li:hover {
 }
 
 .item-text {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .dashboard {
@@ -123,7 +123,7 @@ li:hover {
 .welcome-text h3 {
   font-size: 22px;
   color: #333;
-  margin-bottom: px;
+  margin-bottom: 10px;
 }
 
 .welcome-text p {
@@ -161,6 +161,7 @@ li:hover {
   margin-bottom: 15px;
   font-size: 18px;
   color: #333;
+  font-family: Sukhumvit Set, sans-serif;
 }
 
 .task {
@@ -243,33 +244,57 @@ li:hover {
   gap: 20px;             
 }
 
-form {
+.taskk {
+  background: #f9fbff;
   padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+
 }
 
-input, select {
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid #ccc;
+.taskk form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.taskk label {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.taskk input, 
+.taskk select,
+.taskk textarea {
+  padding: 9px 12px;
   border-radius: 20px;
-  font-size: 15px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
-input:focus, select:focus {
-  border-color: #040404;
-  outline: none;
-  box-shadow: 0 0 4px rgba(74,144,226,0.3);
+#member1, #member2, #member3, #member4 {
+  margin-top: 10px;
+  padding: 8px;
+  background: #f1f5ff;
+  border-radius: 8px;
 }
 
 .boxs {
-  display: flex;            
+  display: flex;
   gap: 20px;                
-  justify-content: center;  
+  justify-content: center;
+}
+
+.boxs a {
+  text-decoration: none;
+  display: flex;
+  width: 670px;
 }
 
 .black-box {
-  width: 100%;
+  flex: 1;            
   height: 50px;
   background-color: #000;
   color: #fff;
@@ -277,16 +302,238 @@ input:focus, select:focus {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .taskk {
-  background: #f8f9ff;
+  background: #f9fbff;
+  padding: 20px;
   border-radius: 12px;
-  padding: 15px;
+  width: 100%;
+  max-width: 1355px;
+  max-height: 45vh;      
+  overflow-y: auto;    
+  align-items: center;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px; 
+  margin-top: 20px;
+}
+
+.btn-reset, .btn-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-reset {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.btn-reset:hover {
+  background: #ddd;
+}
+
+.btn-submit {
+  background: black;
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background: #5f91c6;
+}
+
+.welcome {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
-  width: 50%;
+  background: #cedef3;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
 }
+
+.welcome-text {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.welcome-text h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: px;
+}
+
+.welcome-text p {
+  font-size: 14px;
+  color: #666;
+}
+
+.welcome img {
+  max-width: 200px;
+  margin-right: 50px;
+}
+
+body, input, select, textarea, button, label, h5 {
+  font-family: 'Kanit', sans-serif;
+}
+
+.tasks p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #666;
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-bottom: 10%;
+}
+
+th, td { 
+  padding: 10px; 
+  text-align: left; 
+  border-bottom: 1px solid #ccc; 
+}
+
+th { 
+  background: #cedef3; 
+  color: black; 
+}
+  
+tr:hover { 
+  background: #f1f1f1; 
+}
+
+.btn { 
+  padding: 5px 10px; 
+  background: black; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+  
+.btn:hover { 
+  background: #8da6f7; 
+}
+
+.tabs { 
+  display: flex; 
+  border-bottom: 2px solid #ccc; 
+  margin-bottom: 15px;
+  gap: 10px;
+  cursor: pointer;
+}
+  
+.tab { 
+  padding: 10px 20px; 
+  cursor: pointer; 
+}
+  
+.tab.active { 
+  border-bottom: 3px solid #8da6f7; 
+  font-weight: bold; 
+  color: #8da6f7; 
+}
+
+.tab-content { 
+  display: none; 
+  background: #fff; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+}
+
+.progress-container { 
+  background: #e0e0e0; 
+  border-radius: 20px; 
+  width: 100%; 
+  height: 20px; 
+  margin-top: 5px; 
+}
+  
+.progress-bar { 
+  height: 10%; 
+  background: #28a745; 
+  border-radius: 20px; 
+  width: 0%; 
+  text-align: center; 
+  color: #fff; 
+  line-height: 20px; 
+}
+
+.week-table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+  
+.week-table th, .week-table td { 
+  border: 1px solid #ccc; 
+  padding: 8px; 
+}
+  
+.week-table th { 
+  background: #cedef3; 
+  color: black; 
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.card p {
+  margin: 6px 0;
+}
+
+.label {
+  font-weight: bold;
+  color: black;
+}
+
+.file-link {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.btn-approve { background: #27ae60; color: #fff; }
+.btn-reject { background: #c0392b; color: #fff; }
+

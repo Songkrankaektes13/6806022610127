@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Deshboard</title>
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../html/deshboard_adv.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-home'></i>
+                        </span>
+                        <span class="item-text">หน้าหลัก</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/approve.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-check-circle'></i>
+                        </span>
+                        <span class="item-text">อนุมัติหัวข้อโครงงาน</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/progress.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-chart'></i>
+                        </span>
+                        <span class="item-text">ความก้าวหน้าโครงงาน</span>
+                    </a>
+                </li>
+                </li>
+                <li>
+                    <a href="../html/end_of_exam.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-task'></i>
+                        </span>
+                        <span class="item-text">การสอบจบโครงงาน</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/gallery.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-help-circle'></i>
+                        </span>
+                        <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="dashboard">
+        <div class="header">
+            <img src="../images/images1.png" class="logo" alt="logo">
+            <div class="header-right">
+                <span>Guest</span>
+                <div class="profile-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 
+                                2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 
+                                1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                     </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxs">
+            <div class="black-box">อนุมัติหัวข้อโครงงาน</div>
+        </div>
+
+        <div class="welcome">
+            <div class="welcome-text">
+                <h3>Welcome to Project go!</h3>
+                <p>Ready to start your day with some quick details?</p>
+            </div>
+            <img src="../images/images2.png" alt="Illustration">
+        </div>
+
+        <div class="tasks">
+            <p>ตารางรายชื่อโครงงาน</p>
+            <div class="task">
+                <div class="card">
+                    <p><span class="label">ชื่อโครงงาน (ไทย):</span> ระบบจัดการไฟฟ้าอัจฉริยะ</p>
+                    <p><span class="label">ชื่อโครงงาน (อังกฤษ):</span> Smart Energy Management System</p>
+                    <p><span class="label">รายละเอียด:</span> ระบบ IoT สำหรับควบคุมและติดตามการใช้ไฟฟ้าในอาคาร เพื่อลดพลังงานสิ้นเปลือง</p>
+                    <p><span class="label">นักศึกษา:</span>
+                        <ul>
+                            <li>ก้องภพ - สาขา IT</li>
+                            <li>อลิส - สาขา INET</li>
+                        </ul>
+                    </p>
+                    <p><span class="label">ไฟล์เอกสารเสนอ:</span> 
+                        <a href="#" class="file-link">download_proposal.pdf</a>
+                    </p>
+                    <p><span class="label">อาจารย์ที่ปรึกษาร่วม:</span> อ. มานี</p>
+
+                    <label for="comment">💬 ความเห็น / เหตุผล (ถ้าไม่อนุมัติ):</label>
+                    <textarea id="comment" placeholder="กรอกความคิดเห็น..."></textarea>
+
+                    <br>
+                    <button class="btn btn-approve">✅ อนุมัติ</button>
+                    <button class="btn btn-reject">❌ ไม่อนุมัติ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

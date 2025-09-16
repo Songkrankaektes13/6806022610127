@@ -73,7 +73,8 @@
         </div>
         
         <div class="boxs">
-            <div class="black-box">เสนอโครงงาน</div>
+            <a href="../html/final_submit.html"><div class="black-box">ยื่นสอบจบ</div></a>
+            <a href="../html/date_time_room.html"><div class="black-box">วัน/เวลา/ห้อง </div></a>
         </div>
 
         <div class="welcome">
@@ -81,25 +82,18 @@
                 <h3>ยินดีต้อนรับ! เริ่มต้นกรอกข้อมูลโครงงานของคุณได้เลย</h3>
                 <p>อย่าลืมใส่รายละเอียดทุกช่องและตรวจสอบความให้ถูกต้องก่อนกดยื่น</p>
             </div>
-            <img src="../images/images7.png" alt="Illustration">
+            <img src="../images/images8.png" alt="Illustration">
         </div>
 
         <div class="tasks">
-            <p>กรอกข้อมูลโครงงาน</p>
+            <p>กรอกข้อมูลเพื่อยื่นสอบจบ</p>
             <div class="taskk">
                     <form>
-                        <label>ชื่อโครงงาน :</label>
-                        <input type="text" name="project_th" required>
+                        <label>ชื่อ-นามสกุล :</label>
+                        <input type="text" name="submitName" required>
 
-                        <label>ชื่อโครงงาน (ภาษาอังกฤษ) :</label>
-                        <input type="text" name="project_th" required>
-
-
-                        <label>อาจารย์ที่ปรึกษา :</label>
-                        <input type="text" name="project_ad" required>
-
-                        <label>อาจารย์ที่ปรึกษาโครงาน :</label>
-                        <input type="text" name="project_ad" required>
+                        <label>รหัสนักศึกษา :</label>
+                        <input type="text" name="StudentID" required>
 
                         <label>ผู้ทำโครงงาน :</label>
                         <select id="memberCount" onchange="toggleMembers()" required>
@@ -178,6 +172,19 @@
                             </select>
                         </div>
 
+                        <label>ชื่อโครงงาน :</label>
+                        <input type="text" name="project_th" required>
+
+                        <label>ชื่อโครงงาน (ภาษาอังกฤษ) :</label>
+                        <input type="text" name="project_th" required>
+
+
+                        <label>อาจารย์ที่ปรึกษา :</label>
+                        <input type="text" name="project_ad" required>
+
+                        <label>อาจารย์ที่ปรึกษาโครงาน :</label>
+                        <input type="text" name="project_ad" required>
+
                         <label>ประเภทโครงงาน :</label>
                         <select required>
                             <option value="" disabled selected hidden>กรุณาระบุ</option>
@@ -185,24 +192,35 @@
                             <option value="โครงงานสหกิจ">โครงงานพิเศษ</option>
                         </select>
 
-                        <label>วัตถุประสงค์ของโครงงาน :</label>
-                        <textarea name="objective" rows="3" required></textarea>
-
-                        <label>ขอบเขตการทำงาน :</label>
-                        <textarea name="scope" rows="3" required></textarea>
-
-                        <label>เครื่องมือและเทคโนโลยีที่จะใช้ :</label>
-                        <textarea name="tools" rows="3" required></textarea>
-
-                        <label>อัปโหลดไฟล์เอกสาร :</label>
-                        <input type="file" name="document" accept=".pdf,.doc,.docx" required>
-
-                        <label>วันเสนอหัวข้อ :</label>
-                        <input type="date" name="date" required>
+                        <label>เลือกกรรมการ 3 ท่าน</label>
+                        <select name="committee1" required>
+                            <option value="" disabled selected>กรรมการ 1</option>
+                            <option value="Teacher A">Teacher A</option>
+                            <option value="Teacher B">Teacher B</option>
+                            <option value="Teacher C">Teacher C</option>
+                        </select>
+                        <select name="committee2" required>
+                            <option value="" disabled selected>กรรมการ 2</option>
+                            <option value="Teacher A">Teacher A</option>
+                            <option value="Teacher B">Teacher B</option>
+                            <option value="Teacher C">Teacher C</option>
+                        </select>
+                        <select name="committee3" required>
+                            <option value="" disabled selected>กรรมการ 3</option>
+                            <option value="Teacher A">Teacher A</option>
+                            <option value="Teacher B">Teacher B</option>
+                            <option value="Teacher C">Teacher C</option>
+                        </select>
                         
+                        <label>Upload เล่มโครงงาน (PDF)</label>
+                        <input type="file" name="projectFile" accept=".pdf" required>
+
+                        <label>Upload Presentation (PDF)</label>
+                        <input type="file" name="presentationFile" accept=".pdf" required>
+
                         <div class="btn-group">
                             <button type="reset" class="btn-reset">แก้ไข</button>
-                            <button type="submit" class="btn-submit">ยื่นยัน</button>
+                            <a href="../html/date_time_room.html" class="btn-submit">ถัดไป</a>
                         </div>
                     </form>
             </div>

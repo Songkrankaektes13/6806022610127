@@ -209,4 +209,8 @@ body, html {
   background: #8da6f7;
 }
 
+body, input, select, textarea, button, label, h4 {
+  font-family: 'Kanit', sans-serif;
+}
+
 

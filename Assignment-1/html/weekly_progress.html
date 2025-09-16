@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title> Student Submit Project</title>
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../html/deshboard_std.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-home'></i>
+                        </span>
+                        <span class="item-text">หน้าหลัก</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/submit-project.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-upload'></i>
+                        </span>
+                        <span class="item-text">ยื่นโครงงาน</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/weekly_progress.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-line-chart'></i>
+                        </span>
+                        <span class="item-text">ความก้าวหน้าโครงงาน</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="../html/final_submit.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-send'></i>
+                        </span>
+                        <span class="item-text">ยื่นสอบจบ</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="../html/manual_std.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-help-circle'></i>
+                        </span>
+                        <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="dashboard">
+        <div class="header">
+            <img src="../images/images1.png" class="logo" alt="logo">
+            <div class="header-right">
+                <span>Guest</span>
+                <div class="profile-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 
+                                2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 
+                                1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                     </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="boxs">
+            <div class="black-box">ความก้าวหน้าโครงงาน</div>
+        </div>
+
+        <div class="welcome">
+            <div class="welcome-text">
+                <h3>ยินดีต้อนรับ! เริ่มต้นกรอกข้อมูลความก้าวหน้าของโครงงานคุณได้เลย</h3>
+                <p>อย่าลืมใส่รายละเอียดทุกช่องและตรวจสอบความให้ถูกต้องก่อนกดยื่น</p>
+            </div>
+            <img src="../images/images6.png" alt="Illustration">
+        </div>
+
+        <div class="tasks">
+            <p>กรอกข้อมูลความก้าวหน้า</p>
+            <div class="taskk">
+                    <form>
+                        <label>สัปดาห์ :</label>
+                        <select required>
+                            <option value="" disabled selected hidden>กรุณาระบุ</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </select>
+
+                        <label>งานที่ทำแล้ว :</label>
+                        <textarea name="done" rows="2" required></textarea>
+
+                        <label>ปัญหา/อุปสรรค :</label>
+                        <textarea name="problems" rows="2" required></textarea>
+
+                        <label>แผนถัดไป :</label>
+                        <textarea name="next" rows="2" required></textarea>
+
+                        <label>% ความก้าวหน้า (นักศึกษา):</label>
+                        <input type="number" name="percent" min="0" max="100" required>
+
+                        <label>อัปโหลดไฟล์ :</label>
+                        <input type="file" name="file">
+
+                        <div class="btn-group">
+                            <button type="reset" class="btn-reset">แก้ไข</button>
+                            <button type="submit" class="btn-submit">ยื่นยัน</button>
+                        </div>
+
+                    </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
