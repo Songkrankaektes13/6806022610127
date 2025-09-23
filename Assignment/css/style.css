@@ -149,6 +149,7 @@ li:hover {
   color: #fff;
   font-weight: bold;
   text-align: center;
+  font-size: 18px;
 }
 
 .yellow { background: black; }
@@ -161,7 +162,6 @@ li:hover {
   margin-bottom: 15px;
   font-size: 18px;
   color: #333;
-  font-family: Sukhumvit Set, sans-serif;
 }
 
 .task {
@@ -172,27 +172,6 @@ li:hover {
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
-}
-
-.task img {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-}
-
-.task-info {
-  flex: 1;
-}
-
-.task-info h5 {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.task-info p {
-  font-size: 13px;
-  color: #666;
 }
 
 .profile-icon {
@@ -235,7 +214,7 @@ li:hover {
 }
 
 .search-box button:hover {
-  background-color: #8da6f7;
+  background-color: #cedef3;
 }
 
  .manus {
@@ -291,6 +270,10 @@ li:hover {
   text-decoration: none;
   display: flex;
   width: 670px;
+}
+
+.boxs a:hover .black-box {
+  background-color: #cedef3;
 }
 
 .black-box {
@@ -496,6 +479,10 @@ tr:hover {
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
 
+.card li {
+  padding: 1px;
+}
+
 .card p {
   margin: 6px 0;
 }
@@ -534,6 +521,91 @@ textarea {
   font-size: 14px;
 }
 
-.btn-approve { background: #27ae60; color: #fff; }
-.btn-reject { background: #c0392b; color: #fff; }
+.btn-approve { 
+  background: black; 
+  color: #fff; 
+}
+
+.btn-reject { 
+  background: black; 
+  color: #fff; 
+}
+
+.section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.section button { 
+  margin-top: 15px; 
+  padding: 8px 16px; 
+  background: black; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+.section button:hover { 
+  background: #cedef3; 
+}
+
+.section label { 
+  display: block; 
+  margin-top: 10px; 
+}
+
+.section textarea { 
+  width: 100%; 
+  height: 80px; 
+}
+
+.section h2 {
+  margin-bottom: 10px
+}
+
+.section label { 
+  display: block; 
+  margin-top: 10px; 
+}
+
+.section textarea { 
+  width: 100%; 
+  height: 80px; 
+}
+
+.section button { 
+  margin-top: 15px; 
+  padding: 8px 16px; 
+  background: black; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+}
+
+.section button:hover { 
+  background: #cedef3; 
+}
+
+.section table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 10px; 
+}
+
+.bell-link {
+  font-size: 35px;
+  color: black; 
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.bell-link:hover {
+  transform: scale(1.2) rotate(-10deg);
+  color: #cedef3;
+}
 

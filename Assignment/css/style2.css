@@ -213,4 +213,6 @@ body, input, select, textarea, button, label, h4 {
   font-family: 'Kanit', sans-serif;
 }
 
-
+.logo-img img {
+  margin-bottom: 20px;
+}

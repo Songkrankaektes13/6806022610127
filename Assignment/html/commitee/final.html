@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title> Student Submit Project</title>
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../../html/commitee/deshboard_cmt.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-home'></i>
+                        </span>
+                        <span class="item-text">หน้าหลัก</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/commitee/proposal.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-book-open'></i>
+                        </span>
+                        <span class="item-text">สอบหัวข้อ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/commitee/final.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-trophy'></i>
+                        </span>
+                        <span class="item-text">สอบจบ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/commitee/manual_cmt.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-help-circle'></i>
+                        </span>
+                        <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="dashboard">
+        <div class="header">
+            <img src="../../images/images1.png" class="logo" alt="logo">
+            <div class="header-right">
+                <span>Guest</span>
+                <div class="profile-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 
+                                2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 
+                                1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                     </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="boxs">
+            <div class="black-box">ยื่นสอบจบ</div>
+        </div>
+
+        <div class="welcome">
+            <div class="welcome-text">
+                <h3>ยินดีต้อนรับ! เริ่มต้นกรอกข้อมูลโครงงานของคุณได้เลย</h3>
+                <p>อย่าลืมใส่รายละเอียดทุกช่องและตรวจสอบความให้ถูกต้องก่อนกดยื่น</p>
+            </div>
+            <img src="../../images/images8.png" alt="Illustration">
+        </div>
+
+        <div class="tasks">
+            <p>กรอกข้อมูลเพื่อยื่นสอบจบ</p>
+            <div class="taskk">
+                <table>
+                    <thead>
+                      <tr>
+                        <th>ชื่อโครงงาน (ไทย)</th>
+                        <th>ชื่อโครงงาน (อังกฤษ)</th>
+                        <th>นักศึกษา</th>
+                        <th>วันสอบ</th>
+                        <th>ไฟล์</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ระบบ Smart Bin</td>
+                        <td>Smart Bin System</td>
+                        <td>น.ส. C (INET), นาย D (NET)</td>
+                        <td>5 ตุลาคม 2568</td>
+                        <td>
+                          <a href="#">final-report.pdf</a> | 
+                          <a href="#">presentation.pdf</a>
+                        </td>
+                        <td><button class="btn btn-detail" onclick="showForm('ระบบ Smart Bin')">กรอกผลสอบ</button></td>
+                      </tr>
+                      <tr>
+                        <td>ระบบจัดการห้องเรียน</td>
+                        <td>Classroom Management System</td>
+                        <td>นาย E (ITT), น.ส. F (IT)</td>
+                        <td>10 ตุลาคม 2568</td>
+                        <td>
+                          <a href="#">final2.pdf</a> | 
+                          <a href="#">slide2.pdf</a>
+                        </td>
+                        <td><button class="btn btn-detail" onclick="showForm('ระบบจัดการห้องเรียน')">กรอกผลสอบ</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <div id="exam-section" class="section">
+                    <h2>ผลการสอบจบ: <span id="project-title"></span></h2>
+                    <form>
+                      <label><input type="radio" name="result"> ✅ ผ่าน</label><br>
+                      <label><input type="radio" name="result"> 🔄 ต้องแก้ไข</label><br>
+                      <label><input type="radio" name="result"> ❌ ไม่ผ่าน</label><br><br>
+                      <label>ความเห็น/ข้อเสนอแนะ:</label>
+                      <textarea></textarea><br>
+                      <button type="submit" class="btn btn-submit">บันทึกผลสอบ</button>
+                      <button type="button" class="btn btn-close" onclick="closeForm()">ปิด</button>
+                    </form>
+
+                    <h3>✍️ การลงนามรับรอง (กรณีผ่าน)</h3>
+                    <table class="inner">
+                      <thead>
+                        <tr>
+                          <th>กรรมการ</th>
+                          <th>สถานะ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>อ.สมชาย</td><td>ลงนามแล้ว</td></tr>
+                        <tr><td>อ.สมหญิง</td><td>รอลงนาม</td></tr>
+                        <tr><td>อ.วิทยา</td><td>รอลงนาม</td></tr>
+                      </tbody>
+                    </table>
+                    <button class="btn btn-submit">ลงนามรับรอง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function showForm(title) {
+      document.getElementById("project-title").innerText = title;
+      document.getElementById("exam-section").style.display = "block";
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+    function closeForm() {
+      document.getElementById("exam-section").style.display = "none";
+    }
+  </script>
+</body>
+</html>

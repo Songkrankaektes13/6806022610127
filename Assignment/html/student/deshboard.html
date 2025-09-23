@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <div class="sidebar">
+           <ul>
+                <li>
+                    <a href="../../html/student/deshboard.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-home'></i>
+                        </span>
+                        <span class="item-text">หน้าหลัก</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/student/submit-project.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-upload'></i>
+                        </span>
+                        <span class="item-text">เสนอโครงงาน</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/student/progress.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-line-chart'></i>
+                        </span>
+                        <span class="item-text">ความก้าวหน้าโครงงาน</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="../../html/student/final_submit.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-send'></i>
+                        </span>
+                        <span class="item-text">ยื่นสอบจบ</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="../../html/student/manual.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-help-circle'></i>
+                        </span>
+                        <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="dashboard">
+        <div class="header">
+            <img src="../../images/images1.png" class="logo" alt="logo">
+            <div class="header-right">
+                <div class="search-box">
+                  <input type="text" placeholder="Search...">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+
+                <span>Guest</span>
+                <div class="profile-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                       <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 
+                               2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 
+                               1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                    </svg>
+                </div>
+
+                <a href="../../html/student/notifications.html" class="bell-link">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <div class="welcome-text">
+                <h3>ยินดีต้อนรับ! เริ่มต้นใช้งานระบบติดตามโครงงานได้เลย</h3>
+                <p>ติดตามความก้าวหน้าและจัดการข้อมูลโครงงานของคุณ ที่นี่!</p>
+            </div>
+            <img src="../../images/images2.png" alt="Illustration">
+        </div>
+
+        <div class="stats">
+            <div class="stat yellow" id="stat1"></div>
+            <div class="stat purple" id="stat2"></div>
+            <div class="stat pink" id="stat3"></div>
+        </div>
+
+        <div class="tasks">
+            <p>รายละอียดโครงงาน</p>
+            <div class="taskk">
+                <div class="tabs">
+                  <div class="tab active" onclick="showTab('overview')">ภาพรวม</div>
+                  <div class="tab" onclick="showTab('progress')">ความก้าวหน้าโครงงาน</div>
+                  <div class="tab" onclick="showTab('assessment')">การประเมิน</div>
+                </div>
+                
+                <div id="overview" class="tab-content" style="display:block;">
+                  <h3>ภาพรวม</h3>
+                  <p><strong>ชื่อโครงงาน (ไทย) :</strong> [ชื่อโครงงาน]</p>
+                  <p><strong>ชื่อโครงงาน (อังกฤษ) :</strong> [ชื่อโครงงาน]</p>
+                  <p><strong>ประเภทโครงงาน :</strong> [ประเภทโครงงาน]</p>
+                  <p><strong>นักศึกษา :</strong> [ชื่อผู้ใช้]</p>
+                  <p><strong>รหัสนักศึกษา :</strong> [รหัสนักศึกษา]</p>
+                  <p><strong>สขาา :</strong> [สาขา]</p>
+                  <p><strong>อาจารย์ที่ปรึกษา :</strong> [ชื่ออาจารย์]</p>
+                  <p><strong>อาจารย์ที่ปรึกษาร่วม :</strong> [ชื่ออาจารย์]</p>
+                </div>
+            
+                <div id="proposal" class="tab-content" style="display:none;">
+                  <h3>เสนอโครงงาน</h3>
+                  <p><strong>หัวข้อ:</strong> ระบบถังขยะอัจฉริยะ</p>
+                  <p><strong>ไฟล์ Proposal:</strong> <a href="#">Download</a></p>
+                  <p><strong>ผลสอบหัวข้อ:</strong> ผ่าน</p>
+                </div>
+            
+                <div id="progress" class="tab-content" style="display:none;">
+                  <h3>ความก้าวหน้าโครงงาน รายสัปดาห์</h3>
+                  <table class="week-table">
+                    <thead>
+                      <tr>
+                        <th>สัปดาห์</th>
+                        <th>งานที่ทำแล้ว</th>
+                        <th>ปัญหา</th>
+                        <th>แผนถัดไป</th>
+                        <th>% Progress</th>
+                        <th>Comment อาจารย์</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>วิเคราะห์ปัญหาขยะ</td>
+                        <td>ไม่มี</td>
+                        <td>ออกแบบเซนเซอร์</td>
+                        <td>20%</td>
+                        <td>ดี</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>ออกแบบเซนเซอร์</td>
+                        <td>ต้องสั่งซื้ออุปกรณ์</td>
+                        <td>ติดตั้งทดลอง</td>
+                        <td>40%</td>
+                        <td>ดีมาก</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            
+                <div id="assessment" class="tab-content" style="display:none;">
+                  <h3>การประเมิน</h3>
+                  <p><strong>ผลสอบ:</strong> ผ่าน</p>
+                  <p><strong>ลงนามอาจารย์:</strong> ✅</p>
+                  <p><strong>คะแนน/ข้อเสนอแนะ:</strong> 85/100 - ดีมาก</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function toggleProject() {
+        let projectTabs = document.getElementById("project-tabs");
+        projectTabs.style.display = (projectTabs.style.display === "none" || projectTabs.style.display === "") 
+          ? "block" 
+          : "none";
+      }
+
+      function showTab(tabId) {
+        
+        let tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(tab => tab.style.display = "none");
+        
+        document.getElementById(tabId).style.display = "block";
+
+        let tabButtons = document.querySelectorAll(".tab");
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        event.target.classList.add("active");
+      }
+    </script>
+            
+    <script>
+        function updateStats(data) {
+            document.getElementById("stat1").innerText = data.progress + "% ความก้าวหน้า";
+            document.getElementById("stat2").innerText = data.complete + ": ผลการสอบหัวข้อ";
+            document.getElementById("stat3").innerText = data.tasks + ": ผลการอนุมัติ";
+        }
+
+        updateStats({
+          progress: 10,
+          complete: "ผ่าน ✅",
+          tasks: "อนุมัติ ✅"
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>ยื่นสอบจบ</title>
+</head>
+<body>
+    <div class="container">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../../html/student/deshboard.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-home'></i>
+                        </span>
+                        <span class="item-text">หน้าหลัก</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/student/submit-project.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-upload'></i>
+                        </span>
+                        <span class="item-text">เสนอโครงงาน</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/student/progress.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-line-chart'></i>
+                        </span>
+                        <span class="item-text">ความก้าวหน้าโครงงาน</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="../../html/student/final_submit.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bxs-send'></i>
+                        </span>
+                        <span class="item-text">ยื่นสอบจบ</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="../../html/student/manual.html" class="nav-link">
+                        <span class="item-icon">
+                            <i class='bx bx-help-circle'></i>
+                        </span>
+                        <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="dashboard">
+        <div class="header">
+            <img src="../../images/images1.png" class="logo" alt="logo">
+            <div class="header-right">
+                <span>Guest</span>
+                <div class="profile-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 
+                                2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 
+                                1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                     </svg>
+                </div>
+
+                <a href="../../html/student/notifications.html" class="bell-link">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="welcome">
+            <div class="welcome-text">
+                <h3>ยินดีต้อนรับ! เริ่มต้นกรอกข้อมูลโครงงาน เพื่อยื่นสอบจบของคุณได้เลย</h3>
+                <p>อย่าลืมใส่รายละเอียดทุกช่องและตรวจสอบความให้ถูกต้องก่อนกดยืนยันสอบจบ</p>
+            </div>
+            <img src="../../images/images8.png" alt="Illustration">
+        </div>
+
+        <div class="boxs">
+            <div class="black-box">ยื่นสอบจบ</div>
+        </div>
+
+        <div class="tasks">
+            <p>กรอกข้อมูลเพื่อยื่นสอบจบ</p>
+            <div class="taskk">
+                    <form>
+                        <label>ชื่อ-นามสกุล :</label>
+                        <input type="text" name="submitName" required>
+
+                        <label>รหัสนักศึกษา :</label>
+                        <input type="text" name="StudentID" required>
+
+                        <label>ผู้ทำโครงงาน :</label>
+                        <select id="memberCount" onchange="toggleMembers()" required>
+                            <option value="" disabled selected hidden>กรุณาระบุ</option>
+                            <option value="1">1 คน</option>
+                            <option value="2">2 คน</option>
+                            <option value="3">3 คน</option>
+                            <option value="4">4 คน</option>
+                        </select>
+                        
+                        <div id="member1">
+                            <label>1. ชื่อ :</label>
+                            <input type="text" name="member1_name" required>
+                            <label>นามสกุล :</label>
+                            <input type="text" name="member1_name" required>
+                            <label>รหัสนักศึกษา :</label>
+                            <input type="text" name="member1_id" required> 
+                            <label>สาขา :</label>
+                            <select required>
+                                <option value="" disabled selected hidden>กรุณาระบุ</option>
+                                <option value="IT">IT</option>
+                                <option value="ITI">ITI</option>
+                                <option value="INE">INE</option>
+                                <option value="INET">INET</option>
+                            </select>
+                        </div>
+
+                        <div id="member2" style="display: none;">
+                            <label>2. ชื่อ :</label>
+                            <input type="text" name="member2_name" required>
+                            <label>นามสกุล :</label>
+                            <input type="text" name="member2_name" required>
+                            <label>รหัสนักศึกษา :</label>
+                            <input type="text" name="member2_id" required>
+                            <label>สาขา:</label>
+                            <select required>
+                                <option value="" disabled selected hidden>กรุณาระบุ</option>
+                                <option value="IT">IT</option>
+                                <option value="ITI">ITI</option>
+                                <option value="INE">INE</option>
+                                <option value="INET">INET</option>
+                            </select>
+                        </div>
+
+                        <div id="member3" style="display: none;">
+                            <label>3. ชื่อ :</label>
+                            <input type="text" name="member2_name" required>
+                            <label>นามสกุล :</label>
+                            <input type="text" name="member2_name" required>
+                            <label>รหัสนักศึกษา :</label>
+                            <input type="text" name="member2_id" required>
+                            <label>สาขา:</label>
+                            <select required>
+                                <option value="" disabled selected hidden>กรุณาระบุ</option>
+                                <option value="IT">IT</option>
+                                <option value="ITI">ITI</option>
+                                <option value="INE">INE</option>
+                                <option value="INET">INET</option>
+                            </select>
+                        </div>
+
+                        <div id="member4" style="display: none;">
+                            <label>4. ชื่อ :</label>
+                            <input type="text" name="member2_name" required>
+                            <label>นามสกุล :</label>
+                            <input type="text" name="member2_name" required>
+                            <label>รหัสนักศึกษา :</label>
+                            <input type="text" name="member2_id" required>
+                            <label>สาขา:</label>
+                            <select required>
+                                <option value="" disabled selected hidden>กรุณาระบุ</option>
+                                <option value="IT">IT</option>
+                                <option value="ITI">ITI</option>
+                                <option value="INE">INE</option>
+                                <option value="INET">INET</option>
+                            </select>
+                        </div>
+
+                        <label>ชื่อโครงงาน (ไทย) :</label>
+                        <input type="text" name="project_th" required>
+
+                        <label>ชื่อโครงงาน (อังกฤษ) :</label>
+                        <input type="text" name="project_th" required>
+
+
+                        <label>อาจารย์ที่ปรึกษา :</label>
+                        <select name="project_ad" required>
+                            <option value="" disabled selected>กรุณาระบุ</option>
+                            <option value="Teacher A">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="Teacher B">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="Teacher C">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="Teacher D">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="Teacher E">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="Teacher F">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="Teacher G">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="Teacher H">ผศ.นิติการ นาคเจือทอง</option>
+                            <option value="Teacher I">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="Teacher J">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="Teacher K">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="Teacher L">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="Teacher M">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="Teacher N">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="Teacher O">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="Teacher P">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="Teacher Q">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="Teacher R">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="Teacher S">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="Teacher T">ผศ.ดร.ธีรพงษ์ เหลืองอร่าม</option>
+                            <option value="Teacher U">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="Teacher V">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="Teacher W">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="Teacher X">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+
+                        <label>อาจารย์ที่ปรึกษาร่วม :</label>
+                        <select name="project_ad">
+                            <option value="" disabled selected>กรุณาระบุ (ถ้ามี)</option>
+                            <option value="Teacher A">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="Teacher B">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="Teacher C">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="Teacher D">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="Teacher E">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="Teacher F">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="Teacher G">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="Teacher H">ผศ.นิติการ นาคเจือทอง</option>
+                            <option value="Teacher I">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="Teacher J">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="Teacher K">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="Teacher L">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="Teacher M">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="Teacher N">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="Teacher O">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="Teacher P">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="Teacher Q">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="Teacher R">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="Teacher S">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="Teacher T">ผศ.ดร.ธีรพงษ์ เหลืองอร่าม</option>
+                            <option value="Teacher U">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="Teacher V">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="Teacher W">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="Teacher X">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+
+                        <label>ประเภทโครงงาน :</label>
+                        <select required>
+                            <option value="" disabled selected hidden>กรุณาระบุ</option>
+                            <option value="โครงงานพิเศษ">โครงงานพิเศษ</option>
+                            <option value="โครงงานสหกิจ">โครงงานพิเศษ</option>
+                        </select>
+
+                        <label>เลือกกรรมการ 3 ท่าน (ระบุ 4 ท่านกรณีมีที่ปรึกษาร่วม):</label>
+                        <select name="committee1" required>
+                            <option value="" disabled selected>กรรมการ 1</option>
+                            <option value="Teacher A">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="Teacher B">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="Teacher C">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="Teacher D">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="Teacher E">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="Teacher F">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="Teacher G">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="Teacher H">ผศ.นิติการ นาคเจือทอง</option>
+                            <option value="Teacher I">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="Teacher J">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="Teacher K">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="Teacher L">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="Teacher M">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="Teacher N">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="Teacher O">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="Teacher P">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="Teacher Q">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="Teacher R">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="Teacher S">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="Teacher T">ผศ.ดร.ธีรพงษ์ เหลืองอร่าม</option>
+                            <option value="Teacher U">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="Teacher V">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="Teacher W">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="Teacher X">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+                        <select name="committee2" required>
+                            <option value="" disabled selected>กรรมการ 2</option>
+                            <option value="Teacher A">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="Teacher B">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="Teacher C">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="Teacher D">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="Teacher E">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="Teacher F">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="Teacher G">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="Teacher H">ผศ.นิติการ นาคเจือทอง</option>
+                            <option value="Teacher I">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="Teacher J">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="Teacher K">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="Teacher L">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="Teacher M">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="Teacher N">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="Teacher O">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="Teacher P">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="Teacher Q">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="Teacher R">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="Teacher S">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="Teacher T">ผศ.ดร.ธีรพงษ์ เหลืองอร่าม</option>
+                            <option value="Teacher U">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="Teacher V">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="Teacher W">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="Teacher X">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+                        <select name="committee3" required>
+                            <option value="" disabled selected>กรรมการ 3</option>
+                            <option value="Teacher A">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="Teacher B">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="Teacher C">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="Teacher D">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="Teacher E">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="Teacher F">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="Teacher G">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="Teacher H">ผศ.นิติการ นาคเจือทอง</option>
+                            <option value="Teacher I">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="Teacher J">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="Teacher K">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="Teacher L">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="Teacher M">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="Teacher N">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="Teacher O">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="Teacher P">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="Teacher Q">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="Teacher R">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="Teacher S">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="Teacher T">ผศ.ดร.ธีรพงษ์ เหลืองอร่าม</option>
+                            <option value="Teacher U">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="Teacher V">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="Teacher W">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="Teacher X">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+                        
+                        <select name="committee4" required>
+                            <option value="" disabled selected>กรรมการ 4</option>
+                            <option value="Teacher A">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="Teacher B">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="Teacher C">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="Teacher D">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="Teacher E">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="Teacher F">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="Teacher G">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="Teacher H">ผศ.นิติการ นาคเจือทอง</option>
+                            <option value="Teacher I">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="Teacher J">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="Teacher K">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="Teacher L">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="Teacher M">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="Teacher N">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="Teacher O">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="Teacher P">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="Teacher Q">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="Teacher R">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="Teacher S">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="Teacher T">ผศ.ดร.ธีรพงษ์ เหลืองอร่าม</option>
+                            <option value="Teacher U">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="Teacher V">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="Teacher W">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="Teacher X">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+
+                        <label>Upload เล่มโครงงาน (PDF)</label>
+                        <input type="file" name="projectFile" accept=".pdf" required>
+
+                        <label>Upload Presentation (PDF)</label>
+                        <input type="file" name="presentationFile" accept=".pdf" required>
+
+                        <label>วันยื่นสอบจบ :</label>
+                        <input type="date" name="datefinal" required>
+
+                        <label>เวลายื่นสอบจบ :</label>
+                        <input type="time" name="timefinal" required>
+
+                        <label>ห้องสอบจบ :</label>
+                        <select required>
+                            <option value="" disabled selected hidden>กรุณาระบุ</option>
+                            <option value="A101">A101</option>
+                            <option value="A102">A102</option>
+                            <option value="A103">A103</option>
+                            <option value="A104">A104</option>
+                            <option value="A105">A105</option>
+                            <option value="A106">A106</option>
+                            <option value="A107">A107</option>
+                            <option value="A108">A108</option>
+                            <option value="A109">A109</option>
+                            <option value="A110">A110</option>
+                        </select>
+
+                        <div class="btn-group">
+                            <button type="reset" class="btn-reset">แก้ไข</button>
+                            <button type="submit" class="btn-submit">ยื่นยันยื่นสอบจบ</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMembers() {
+            const count = parseInt(document.getElementById("memberCount").value); 
+            for (let i = 1; i <= 4; i++) {
+                const memberDiv = document.getElementById("member" + i);
+                if (i <= count) {
+                    memberDiv.style.display = "block";  
+                } else {
+                    memberDiv.style.display = "none";  
+                }
+            }
+        }
+    </script>
+</body>
+</html>
