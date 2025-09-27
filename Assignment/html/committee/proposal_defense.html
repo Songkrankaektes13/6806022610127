@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Deshboard</title>
+    <title>สอบหัวข้อ</title>
 </head>
 <body>
     <div class="container">
@@ -14,35 +14,51 @@
         <div class="sidebar">
             <ul>
                 <li>
-                    <a href="../../html/commitee/deshboard_cmt.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bxs-home'></i>
-                        </span>
-                        <span class="item-text">หน้าหลัก</span>
+                    <a href="../../html/committee/deshboard.html" class="nav-link">
+                      <span class="item-icon">
+                        <i class='bx bxs-home'></i>
+                      </span>
+                      <span class="item-text">หน้าหลัก</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../../html/commitee/proposal.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bx-book-open'></i>
-                        </span>
-                        <span class="item-text">สอบหัวข้อ</span>
+                    <a href="../../html/committee/proposal_defense.html" class="nav-link">
+                      <span class="item-icon">
+                        <i class='bx bx-book-open'></i>
+                      </span>
+                      <span class="item-text">สอบหัวข้อ</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../../html/commitee/final.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bx-trophy'></i>
-                        </span>
-                        <span class="item-text">สอบจบ</span>
+                    <a href="../../html/committee/progress.html" class="nav-link">
+                      <span class="item-icon">
+                        <i class='bx bx-line-chart'></i>
+                      </span>
+                      <span class="item-text">ความก้าวหน้าโครงงาน</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../../html/commitee/manual_cmt.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bx-help-circle'></i>
-                        </span>
-                        <span class="item-text">คู่มือ</span>
+                    <a href="../../html/committee/final_defense.html" class="nav-link">
+                      <span class="item-icon">
+                        <i class='bx bx-trophy'></i>
+                      </span>
+                      <span class="item-text">สอบจบ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/committee/manual.html" class="nav-link">
+                      <span class="item-icon">
+                        <i class='bx bx-help-circle'></i>
+                      </span>
+                      <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+                 <li>
+                  <a href="../../html/role.html" class="nav-link">
+                      <span class="item-icon">
+                        <i class='bx bx-log-out'></i>
+                      </span>
+                      <span class="item-text">ออกจากระบบ</span>
                     </a>
                 </li>
             </ul>
@@ -54,10 +70,6 @@
         <div class="header">
             <img src="../../images/images1.png" class="logo" alt="logo">
             <div class="header-right">
-                <div class="search-box">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </div>
                 <span>Guest</span>
                 <div class="profile-icon">
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
@@ -66,19 +78,22 @@
                                 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
                      </svg>
                 </div>
+                 <a href="../../html/student/notifications.html" class="bell-link">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
             </div>
         </div>
 
         <div class="welcome">
             <div class="welcome-text">
-                <h3>Welcome to Project go!</h3>
-                <p>Ready to start your day with some quick details?</p>
+                <h3>🔍 สอบหัวข้อโครงงาน!</h3>
+                <p>ดูรายละเอียดโครงงานที่นักศึกษาเสนอเข้ามา พร้อมทั้งกรอกผลการสอบว่า ผ่าน / ผ่านโดยมีการแก้ไข / ไม่ผ่าน และอย่าลืมตรวจสอบข้อมูลให้ครบถ้วนก่อนกดยืนยันผลสอบ</p>
             </div>
             <img src="../../images/images2.png" alt="Illustration">
         </div>
 
         <div class="boxs">
-            <div class="black-box">รายการโครงงานที่ดูแล</div>
+            <div class="black-box">สอบหัวข้อ</div>
         </div>
 
         <div class="tasks">
@@ -91,24 +106,27 @@
                         <th>ชื่อโครงงาน (อังกฤษ)</th>
                         <th>นักศึกษา</th>
                         <th>อาจารย์ที่ปรึกษา</th>
+                        <th>อาจารย์ที่ปรึกษาร่วม</th>
                         <th>ไฟล์เสนอ</th>
                         <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>ระบบจัดการโครงงานพิเศษ</td>
-                        <td>Project Management System</td>
-                        <td>นาย A (IT), นาย B (ITI)</td>
-                        <td>อ.สมชาย</td>
+                        <td>ชื่อโครงงาน</td>
+                        <td>ชื่อโครงงาน</td>
+                        <td>รหัส ชื่อ สาขา</td>
+                        <td>ชื่ออาจารย์</td>
+                        <td>ชื่ออาจารย์</td>
                         <td><a href="#">proposal1.pdf</a></td>
                         <td><button class="btn btn-detail" onclick="showForm('ระบบจัดการโครงงานพิเศษ')">กรอกผลสอบ</button></td>
                       </tr>
                       <tr>
-                        <td>ระบบ Smart Bin</td>
-                        <td>Smart Bin System</td>
-                        <td>น.ส. C (INET), นาย D (NET)</td>
-                        <td>อ.สมหญิง</td>
+                        <td>ชื่อโครงงาน</td>
+                        <td>ชื่อโครงงาน</td>
+                        <td>รหัส ชื่อ สาขา</td>
+                        <td>ชื่ออาจารย์</td>
+                        <td>ชื่ออาจารย์</td>
                         <td><a href="#">proposal2.pdf</a></td>
                         <td><button class="btn btn-detail" onclick="showForm('ระบบ Smart Bin')">กรอกผลสอบ</button></td>
                       </tr>
@@ -118,10 +136,10 @@
                 <div id="exam-section" class="section">
                   <h2>ผลการสอบหัวข้อ: <span id="project-title"></span></h2>
                   <form>
-                    <label><input type="radio" name="result"> ✅ ผ่าน</label><br>
-                    <label><input type="radio" name="result"> 🔄 ต้องแก้ไข</label><br>
-                    <label><input type="radio" name="result"> ❌ ไม่ผ่าน</label><br><br>
-                    <label>ความเห็น/เหตุผล:</label>
+                    <label><input type="radio" name="result"> ผ่าน</label><br>
+                    <label><input type="radio" name="result"> ผ่านโดยมีการแก้ไข</label><br>
+                    <label><input type="radio" name="result"> ไม่ผ่าน</label><br><br>
+                    <label>🗨️ความเห็น/เหตุผล:</label>
                     <textarea></textarea><br>
                     <button type="submit" class="btn btn-submit">บันทึกผลสอบ</button>
                     <button type="button" class="btn btn-close" onclick="closeForm()">ปิด</button>

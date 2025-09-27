@@ -14,39 +14,46 @@
         <div class="sidebar">
             <ul>
                 <li>
-                    <a href="../../html/advisor/deshboard.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bxs-home'></i>
-                        </span>
-                        <span class="item-text">หน้าหลัก</span>
+                    <a href="../../html/committee/deshboard.html" class="nav-link">
+                      <span class="item-icon">
+                          <i class='bx bxs-home'></i>
+                      </span>
+                      <span class="item-text">หน้าหลัก</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../../html/advisor/approve.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bx-check-circle'></i>
-                        </span>
-                        <span class="item-text">อนุมัติหัวข้อโครงงาน</span>
+                    <a href="../../html/committee/proposal_defense.html" class="nav-link">
+                      <span class="item-icon">
+                          <i class='bx bx-book-open'></i>
+                      </span>
+                      <span class="item-text">สอบหัวข้อ</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../../html/advisor/progress.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bx-chart'></i>
-                        </span>
-                        <span class="item-text">ความก้าวหน้าโครงงาน</span>
-                    </a>
-                </li>
-                </li>
-                <li>
-                    <a href="../../html/advisor/manual.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bx-help-circle'></i>
-                        </span>
-                        <span class="item-text">คู่มือ</span>
+                    <a href="../../html/committee/progress.html" class="nav-link">
+                      <span class="item-icon">
+                          <i class='bx bx-line-chart'></i>
+                      </span>
+                      <span class="item-text">ความก้าวหน้าโครงงาน</span>
                     </a>
                 </li>
                 <li>
+                    <a href="../../html/committee/final_defense.html" class="nav-link">
+                      <span class="item-icon">
+                          <i class='bx bx-trophy'></i>
+                      </span>
+                      <span class="item-text">สอบจบ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../html/committee/manual.html" class="nav-link">
+                      <span class="item-icon">
+                          <i class='bx bx-help-circle'></i>
+                      </span>
+                      <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+                 <li>
                   <a href="../../html/role.html" class="nav-link">
                       <span class="item-icon">
                         <i class='bx bx-log-out'></i>
@@ -76,7 +83,7 @@
                      </svg>
                 </div>
 
-                <a href="../../html/advisor/notifications.html" class="bell-link">
+                 <a href="../../html/student/notifications.html" class="bell-link">
                   <i class="fa-solid fa-bell"></i>
                 </a>
             </div>
@@ -85,9 +92,9 @@
         <div class="welcome">
             <div class="welcome-text">
                 <h3>ยินดีต้อนรับ! เข้าสู่ ✔️Project go</h3>
-                <p>ระบบติดตาม ตรวจสอบ และประเมินโครงงานของนักศึกษา สำหรับอาจารย์ที่ปรึกษา และอาจารย์ประจำวิชา!</p>
+                <p>ตรวจสอบรายการสอบที่ได้รับเชิญ ดูรายละเอียดโครงงาน และบันทึกผลการสอบได้ที่นี่!</p>
             </div>
-            <img src="../../images/images11.png" alt="Illustration">
+            <img src="../../images/images7.png" alt="Illustration">
         </div>
 
         <div class="boxs">
@@ -95,16 +102,16 @@
         </div>
 
         <div class="tasks">
-            <p>ตารางรายชื่อโครงงาน และรายละเอียด</p>
+          <p>ตารางรายชื่อโครงงาน และรายละเอียด</p>
             <div class="taskk">
                 <table>
                     <thead>
                       <tr>
                         <th>ชื่อโครงงาน (ไทย)</th>
                         <th>ชื่อโครงงาน (อังกฤษ)</th>
-                        <th>นักศึกษา</th>
+                        <th>วันสอบ</th>
                         <th>สถานะ</th>
-                        <th>% Progress</th>
+                        <th>การสอบ</th>
                         <th>Action</th>
                       </tr>
                     </thead>
@@ -112,13 +119,9 @@
                       <tr>
                         <td>ชื่อโครงงาน</td>
                         <td>ชื่อโครงงาน</td>
-                        <td>ชื่อนักศึกษา</td>
-                        <td>สถานะโครงงาน</td>
-                        <td>
-                          <div class="progress-container">
-                            <div class="progress_bar" style="width: 70%;">70%</div>
-                          </div>
-                        </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>สอบหัวข้อ, สอบจบ</td>
                         <td>
                           <button class="btn" onclick="toggleProject()">ดูรายละเอียด</button>
                         </td>
@@ -136,9 +139,6 @@
                 <div class="tabs">
                   <div class="tab active" onclick="showTab('overview')">ภาพรวม</div>
                   <div class="tab" onclick="showTab('proposal')">เสนอโครงงาน</div>
-                  <div class="tab" onclick="showTab('progress')">ความก้าวหน้าโครงงาน</div>
-                  <div class="tab" onclick="showTab('files')">ไฟล์โครงงาน</div>
-                  <div class="tab" onclick="showTab('assessment')">การประเมิน</div>
                 </div>
                 
                 <div id="overview" class="tab-content" style="display:block;">
@@ -165,57 +165,6 @@
                   <p><strong>วัตถุประสงค์ของโครงงาน :</strong> วัตถุประสงค์</p>
                   <p><strong>ขอบเขตการทำงาน :</strong> ขอบเขต</p>
                   <p><strong>เครื่องมือและเทคโนโลยีที่จะใช้ :</strong> เครื่องมือและเทคโนโลยี</p>
-                </div>
-            
-                <div id="progress" class="tab-content" style="display:none;">
-                  <h3>ความก้าวหน้าโครงงาน รายสัปดาห์</h3>
-                  <table class="week-table">
-                    <thead>
-                      <tr>
-                        <th>สัปดาห์</th>
-                        <th>งานที่ทำแล้ว</th>
-                        <th>ปัญหา</th>
-                        <th>แผนถัดไป</th>
-                        <th>% Progress</th>
-                        <th>Comment อาจารย์</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>20%</td>
-                        <td>ดี</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>40%</td>
-                        <td>ดีมาก</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-            
-                <div id="files" class="tab-content" style="display:none;">
-                  <h3>ไฟล์โครงงาน</h3>
-                  <ul>
-                    <li>Proposal: <a href="#">Download</a> | <button>Approve</button></li>
-                    <li>Draft: <a href="#">Download</a> | <button>Approve</button></li>
-                    <li>Presentation: <a href="#">Download</a> | <button>Approve</button></li>
-                    <li>Final: <a href="#">Download</a> | <button>Approve</button></li>
-                  </ul>
-                </div>
-            
-                <div id="assessment" class="tab-content" style="display:none;">
-                  <h3>การประเมิน</h3>
-                  <p><strong>ผลสอบ :</strong> ผ่าน, ผ่านโดยมีการแก้ไข, ไม่ผ่าน</p>
-                  <p><strong>ลงนามอาจารย์ :</strong>-</p>
-                  <p><strong>คะแนน/ข้อเสนอแนะ :</strong> คะแนนและข้อเสนอแนะ</p>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Deshboard</title>
+    <title>ความก้าวหน้าโครงงาน</title>
 </head>
 <body>
     <div class="container">
@@ -39,19 +39,19 @@
                 </li>
                 </li>
                 <li>
-                    <a href="../../html/advisor/end_of_exam.html" class="nav-link">
-                        <span class="item-icon">
-                            <i class='bx bx-task'></i>
-                        </span>
-                        <span class="item-text">การสอบจบโครงงาน</span>
-                    </a>
-                </li>
-                <li>
                     <a href="../../html/advisor/manual.html" class="nav-link">
                         <span class="item-icon">
                             <i class='bx bx-help-circle'></i>
                         </span>
                         <span class="item-text">คู่มือ</span>
+                    </a>
+                </li>
+                <li>
+                  <a href="../../html/role.html" class="nav-link">
+                      <span class="item-icon">
+                        <i class='bx bx-log-out'></i>
+                      </span>
+                      <span class="item-text">ออกจากระบบ</span>
                     </a>
                 </li>
             </ul>
@@ -80,8 +80,10 @@
 
         <div class="welcome">
             <div class="welcome-text">
-                <h3>Welcome to Project go!</h3>
-                <p>Ready to start your day with some quick details?</p>
+                <h3>📊 ความก้าวหน้าของโครงงานนักศึกษา</h3>
+                <p>ตรวจสอบรายงานความก้าวหน้าของนักศึกษาที่ส่งเข้ามาในแต่ละสัปดาห์  
+                อาจารย์สามารถอ่านรายละเอียดงาน ปัญหา และแผนงานถัดไป พร้อมให้ความคิดเห็น  
+                และประเมินเปอร์เซ็นต์ความก้าวหน้า ก่อนเซ็นรับทราบ</p>
             </div>
             <img src="../../images/images13.png" alt="Illustration">
         </div>
@@ -93,41 +95,70 @@
         <div class="tasks">
             <p>ข้อมูลความก้าวหน้าแต่ละสัปดาห์</p>
             <div class="taskk">
-                <div class="card">
-                    <p><span class="label">สัปดาห์ที่ 1</span></p>
-                    <p><span class="label">งานที่ทำแล้ว:</span> เก็บข้อมูลเบื้องต้นเกี่ยวกับระบบ IoT</p>
-                    <p><span class="label">ปัญหา:</span> ข้อมูลไม่ครบตามที่นักศึกษาเก็บ</p>
-                    <p><span class="label">แผนงานถัดไป:</span> ทำแบบสอบถามเพิ่มและเริ่มออกแบบระบบ</p>
-                    <p><span class="label">% ความก้าวหน้าที่นักศึกษาใส่:</span> 30%</p>
-                    <p><span class="label">ไฟล์หลักฐาน:</span> <a href="#" class="file-link">report_week1.pdf</a></p>
+                <div class="tabs">
+                  <div class="tab active" onclick="showTab('overview')">สำหรับอาจารย์ที่ปรึกษา</div>
+                  <div class="tab" onclick="showTab('progress')">สำหรับอาจารย์ประจำวิชา</div>
+                </div>
+                
+                <div id="overview" class="tab-content" style="display:block;">
+                    <h3>สัปดาห์ที่ 1</h3>
+                    <p><strong>งานที่ทำแล้ว :</strong></p>
+                    <p><strong>ปัญหา :</strong></p>
+                    <p><strong>แผนงานถัดไป :</strong></p>
+                    <p><strong>% ความก้าวหน้าที่นักศึกษาระบุ :</strong></p>
+                    <p><strong>ไฟล์หลักฐาน :</strong> <a href="#" class="file-link">progress.pdf</a></p>  
 
-                    <label>💬 ความเห็น/ข้อเสนอแนะอาจารย์:</label>
-                    <textarea placeholder="กรอกความคิดเห็น..."></textarea><br><br>
+                    <label>💬 ความเห็น/ข้อเสนอแนะ :</label>
+                    <textarea placeholder="กรอกความคิดเห็น..." required></textarea><br><br>
 
-                    <label>% ความก้าวหน้าที่อาจารย์ประเมิน:</label>
-                    <input type="number" min="0" max="100" value="30"> %<br><br>
+                    <label>% ความก้าวหน้า (สำหรับอาจารย์ที่ปรึกษา) :</label>
+                    <input type="number" min="0" max="100" value="50" required> %<br><br>
 
-                    <button class="btn btn-sign">✅ เซ็นรับทราบ</button>
+                    <button class="btn btn-sign">ยื่นยัน</button>
                 </div>
 
-                <div class="card">
-                    <p><span class="label">สัปดาห์ที่ 2</span></p>
-                    <p><span class="label">งานที่ทำแล้ว:</span> ออกแบบระบบ IoT และเริ่มเขียนโค้ดเบื้องต้น</p>
-                    <p><span class="label">ปัญหา:</span> การเชื่อมต่อเซนเซอร์บางจุดยังไม่เสถียร</p>
-                    <p><span class="label">แผนงานถัดไป:</span> แก้ไขการเชื่อมต่อเซนเซอร์และทำระบบแจ้งเตือน</p>
-                    <p><span class="label">% ความก้าวหน้าที่นักศึกษาใส่:</span> 50%</p>
-                    <p><span class="label">ไฟล์หลักฐาน:</span> <a href="#" class="file-link">report_week2.pdf</a></p>
+                <div id="progress" class="tab-content" style="display:none;">
+                    <h3>สัปดาห์ที่ 1</h3>
+                    <p><strong>งานที่ทำแล้ว :</strong></p>
+                    <p><strong>ปัญหา :</strong></p>
+                    <p><strong>แผนงานถัดไป :</strong></p>
+                    <p><strong>% ความก้าวหน้าที่นักศึกษาระบุ :</strong></p>
+                    <p><strong>ไฟล์หลักฐาน :</strong> <a href="#" class="file-link">prograss.pdf</a></p>
+                     
+                    <p><label>ความเห็น/ข้อเสนอแนะ ที่อาจารย์ที่ปรึกษาระบุ :</label></p>
+                    <p><label>% ความก้าวหน้าที่อาจารย์ที่ปรึกษาระบุ :</label></p>
 
-                    <label>💬 ความเห็น/ข้อเสนอแนะอาจารย์:</label>
+                    <label>💬 ความเห็น/ข้อเสนอแนะ :</label>
                     <textarea placeholder="กรอกความคิดเห็น..."></textarea><br><br>
 
-                    <label>% ความก้าวหน้าที่อาจารย์ประเมิน:</label>
-                    <input type="number" min="0" max="100" value="50"> %<br><br>
+                    <label>ลงชื่อรับทราบ :</label>
+                    <input required size="45px"></input><br><br>
 
-                    <button class="btn btn-sign">✅ เซ็นรับทราบ</button>
+                    <button class="btn btn-sign">ยื่นยัน</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+      function toggleProject() {
+        let projectTabs = document.getElementById("project-tabs");
+        projectTabs.style.display = (projectTabs.style.display === "none" || projectTabs.style.display === "") 
+          ? "block" 
+          : "none";
+      }
+
+      function showTab(tabId) {
+        
+        let tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(tab => tab.style.display = "none");
+        
+        document.getElementById(tabId).style.display = "block";
+
+        let tabButtons = document.querySelectorAll(".tab");
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        event.target.classList.add("active");
+      }
+    </script>
 </body>
 </html>
